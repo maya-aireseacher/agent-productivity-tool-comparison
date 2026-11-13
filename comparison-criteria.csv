@@ -1,0 +1,8 @@
+criterion,description,tool_signal,agent_signal,weight_guidance
+Setup efficiency,Time and effort to reach stable operation,Hours to configure and integrate,Hours to write instructions and test,Weight high if deployment speed matters
+Ongoing overhead,Weekly maintenance and supervision,Update and integration time,Instruction refinement and output review time,Weight high for long-term deployments
+Throughput,Items processed per unit time,Manual processing rate,Agent processing rate accounting for idle time,Weight high if volume is the primary constraint
+Reliability,Error rate and consistency,Tool error rate and sync failures,Agent error rate and context failures,Weight high in domains where mistakes are costly
+Failure recovery,Time to diagnose and fix failures,Tool recovery time,Agent recovery time plus instruction update time,Weight high if downtime is expensive
+New capabilities,Functions that only the agent enables,N/A—baseline is tool capabilities,Priority inference blocked-task detection etc,Weight high if these capabilities solve real problems
+Team learning curve,Effort for others to adopt the system,Onboarding time for tool,Onboarding time for agent interaction patterns,Weight high for shared workflows
